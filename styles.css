@@ -1,0 +1,113 @@
+
+body{ 
+    background-color: #fefae0;
+}
+
+@media (max-width: 768px){
+    .checkbtn{ display: block;
+    } 
+    #encabezado{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: #2c3e50;
+    }
+}
+
+/* ~ significa que aplica a todos lo elementos despues de, en este caso de ul y .checkbtn  */
+
+header{
+    background-color: #ffd97d;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 80px;
+
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: brown;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header nav {
+    float: right;
+} 
+
+header h1 {
+    display: inline-block;
+    line-height: 80px;
+}
+
+.principal {
+    justify-items: center;
+}
+
+/* .bloques{
+    display: flex;
+    
+} */
+.MS IMG {
+    border-radius: 25% 10%;
+}
+
+.AS IMG {
+    border-radius: 25% 10%;
+}
+
+.MS {
+    width: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.AS {
+    width: 300px;
+    float: left;
+    padding: 20px;
+}
+
+footer{
+    background-color: #ee6055;
+    clear: both;
+}
+
+
+
+
+
